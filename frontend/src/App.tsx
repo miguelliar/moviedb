@@ -1,21 +1,15 @@
-import { mockData } from './__stubs__/films'
-import './App.scss'
-import { MiniCard } from './components/MiniCard'
+import { Route, Routes } from "react-router-dom"
+import { Home } from "./views/Home"
+import { Film } from "./views/Film"
+
 
 function App() {
 
   return (
-    <main className='search-page'>
-      <section className='search-filters'>
-        Filtros
-      </section>
-      <section className='search-grid'>
-        {mockData.map((film, index) => {
-          return (
-            <MiniCard film={film} key={`film-${film.name}-${index}`} />
-        )})}
-      </section>
-    </main>
+    <Routes>
+      <Route path="/" element={<Home />} />
+      <Route path="/film" element={<Film />} />
+    </Routes>
   )
 }
 
