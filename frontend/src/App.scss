@@ -1,0 +1,21 @@
+#root {
+  width: 100%;
+}
+
+.search{
+  &-page {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+  }
+
+  &-grid {
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    grid-template-rows: repeat(auto-fit, minmax(200px, 1fr));
+    grid-column-gap: 0.5rem;
+    grid-row-gap: 0.5rem;
+  }
+}
