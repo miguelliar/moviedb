@@ -1,0 +1,21 @@
+.film {
+    display: flex;
+    flex-direction: column;
+
+    &__poster {
+        max-width: 15rem;
+        margin: 1rem;
+    }
+
+    &__info {
+        margin: 1rem;
+    }
+
+    @media screen and (min-width: 600px) {
+        flex-direction: row;
+
+        &__poster {
+            max-width: 25rem;
+        }
+    }
+}

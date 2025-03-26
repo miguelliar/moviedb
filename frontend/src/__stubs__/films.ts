@@ -2,6 +2,7 @@ import { FilmData } from "../utils/types";
 
 export const mockData: FilmData[] = [
   {
+    id: "1",
     name: "The Shawshank Redemption",
     director: "Frank Darabont",
     year: 1994,
@@ -15,6 +16,7 @@ export const mockData: FilmData[] = [
     moviePoster: "https://m.media-amazon.com/images/I/51NiGlapXlL._AC_.jpg"
   },
   {
+    id: "2",
     name: "The Dark Knight",
     director: "Christopher Nolan",
     year: 2008,
@@ -28,6 +30,7 @@ export const mockData: FilmData[] = [
     moviePoster: "https://m.media-amazon.com/images/I/51EbJjlH+IL._AC_.jpg"
   },
   {
+    id: "3",
     name: "Inception",
     director: "Christopher Nolan",
     year: 2010,
@@ -41,6 +44,7 @@ export const mockData: FilmData[] = [
     moviePoster: "https://m.media-amazon.com/images/I/81p+xe8cbnL._AC_SY679_.jpg"
   },
   {
+    id: "4",
     name: "Pulp Fiction",
     director: "Quentin Tarantino",
     year: 1994,
@@ -54,6 +58,7 @@ export const mockData: FilmData[] = [
     moviePoster: "https://m.media-amazon.com/images/I/71c05lTE03L._AC_SY679_.jpg"
   },
   {
+    id: "5",
     name: "Forrest Gump",
     director: "Robert Zemeckis",
     year: 1994,
@@ -69,6 +74,7 @@ export const mockData: FilmData[] = [
       "https://m.media-amazon.com/images/I/61Kc5m2eKYL._AC_SY679_.jpg"
   },
   {
+    id: "6",
     name: "The Godfather",
     director: "Francis Ford Coppola",
     year: 1972,
@@ -82,6 +88,7 @@ export const mockData: FilmData[] = [
     moviePoster: "https://m.media-amazon.com/images/I/41+eK8zBwQL._AC_.jpg"
   },
   {
+    id: "7",
     name: "Jurassic Park",
     director: "Steven Spielberg",
     year: 1993,
@@ -95,6 +102,7 @@ export const mockData: FilmData[] = [
     moviePoster: "https://m.media-amazon.com/images/I/81F+X8+FbRL._AC_SY679_.jpg"
   },
   {
+    id: "8",
     name: "The Silence of the Lambs",
     director: "Jonathan Demme",
     year: 1991,
@@ -108,6 +116,7 @@ export const mockData: FilmData[] = [
     moviePoster: "https://m.media-amazon.com/images/I/51I3c1kBzRL._AC_.jpg"
   },
   {
+    id: "9",
     name: "Crouching Tiger, Hidden Dragon",
     director: "Ang Lee",
     year: 2000,
@@ -123,6 +132,7 @@ export const mockData: FilmData[] = [
       "https://m.media-amazon.com/images/I/51+9qKpZ3yL._AC_SY679_.jpg"
   },
   {
+    id: "10",
     name: "La La Land",
     director: "Damien Chazelle",
     year: 2016,
@@ -138,6 +148,7 @@ export const mockData: FilmData[] = [
       "https://m.media-amazon.com/images/I/71QxO7y2aPL._AC_SY679_.jpg"
   },
   {
+    id: "11",
     name: "Psycho",
     director: "Alfred Hitchcock",
     year: 1960,
@@ -151,6 +162,7 @@ export const mockData: FilmData[] = [
     moviePoster: "https://m.media-amazon.com/images/I/51Ew7nKVlFL._AC_.jpg"
   },
   {
+    id: "12",
     name: "Back to the Future",
     director: "Robert Zemeckis",
     year: 1985,
@@ -164,6 +176,7 @@ export const mockData: FilmData[] = [
     moviePoster: "https://m.media-amazon.com/images/I/71BPuv+iRbL._AC_SY679_.jpg"
   },
   {
+    id: "13",
     name: "Casablanca",
     director: "Michael Curtiz",
     year: 1942,
@@ -177,6 +190,7 @@ export const mockData: FilmData[] = [
     moviePoster: "https://m.media-amazon.com/images/I/51UXrGODnmL._AC_.jpg"
   },
   {
+    id: "14",
     name: "The Lord of the Rings: The Fellowship of the Ring",
     director: "Peter Jackson",
     year: 2001,
@@ -190,6 +204,7 @@ export const mockData: FilmData[] = [
     moviePoster: "https://m.media-amazon.com/images/I/81EBp0vOZZL._AC_SY679_.jpg"
   },
   {
+    id: "15",
     name: "Alien",
     director: "Ridley Scott",
     year: 1979,
@@ -203,6 +218,7 @@ export const mockData: FilmData[] = [
     moviePoster: "https://m.media-amazon.com/images/I/71S7+AVaVRL._AC_SY679_.jpg"
   },
   {
+    id: "16",
     name: "The Matrix",
     director: "The Wachowskis",
     year: 1999,
@@ -216,6 +232,7 @@ export const mockData: FilmData[] = [
     moviePoster: "https://m.media-amazon.com/images/I/51EG732BV3L._AC_.jpg"
   },
   {
+    id: "17",
     name: "Spirited Away",
     director: "Hayao Miyazaki",
     year: 2001,
@@ -229,6 +246,7 @@ export const mockData: FilmData[] = [
     moviePoster: "https://m.media-amazon.com/images/I/51J0X8VM8YL._AC_.jpg"
   },
   {
+    id: "18",
     name: "The Shining",
     director: "Stanley Kubrick",
     year: 1980,
@@ -242,6 +260,7 @@ export const mockData: FilmData[] = [
     moviePoster: "https://m.media-amazon.com/images/I/51+5kVQjNtL._AC_.jpg"
   },
   {
+    id: "19",
     name: "The Grand Budapest Hotel",
     director: "Wes Anderson",
     year: 2014,
@@ -255,6 +274,7 @@ export const mockData: FilmData[] = [
     moviePoster: "https://m.media-amazon.com/images/I/91jrKX9xjQL._AC_SY679_.jpg"
   },
   {
+    id: "20",
     name: "Parasite",
     director: "Bong Joon-ho",
     year: 2019,
@@ -268,6 +288,7 @@ export const mockData: FilmData[] = [
     moviePoster: "https://m.media-amazon.com/images/I/91sustfojBL._AC_SL1500_.jpg"
   },
   {
+    id: "21",
     name: "Apocalypse Now",
     director: "Francis Ford Coppola",
     year: 1979,
@@ -281,6 +302,7 @@ export const mockData: FilmData[] = [
     moviePoster: "https://m.media-amazon.com/images/I/51A8l+FxFNL._AC_.jpg"
   },
   {
+    id: "22",
     name: "The Wolf of Wall Street",
     director: "Martin Scorsese",
     year: 2013,
@@ -294,6 +316,7 @@ export const mockData: FilmData[] = [
     moviePoster: "https://m.media-amazon.com/images/I/81c9ZKb1JPL._AC_SY679_.jpg"
   },
   {
+    id: "23",
     name: "Eternal Sunshine of the Spotless Mind",
     director: "Michel Gondry",
     year: 2004,
@@ -309,6 +332,7 @@ export const mockData: FilmData[] = [
       "https://m.media-amazon.com/images/I/71p8G+3hE1L._AC_SY679_.jpg"
   },
   {
+    id: "24",
     name: "The Green Mile",
     director: "Frank Darabont",
     year: 1999,
@@ -324,6 +348,7 @@ export const mockData: FilmData[] = [
       "https://m.media-amazon.com/images/I/91XQ7gX6ySL._AC_SY679_.jpg"
   },
   {
+    id: "25",
     name: "Life of Pi",
     director: "Ang Lee",
     year: 2012,
@@ -339,6 +364,7 @@ export const mockData: FilmData[] = [
       "https://m.media-amazon.com/images/I/71xZx0dUeKL._AC_SY679_.jpg"
   },
   {
+    id: "26",
     name: "The Silence of the Lambs",
     director: "Jonathan Demme",
     year: 1991,
@@ -352,6 +378,7 @@ export const mockData: FilmData[] = [
     moviePoster: "https://m.media-amazon.com/images/I/51I3c1kBzRL._AC_.jpg"
   },
   {
+    id: "27",
     name: "Whiplash",
     director: "Damien Chazelle",
     year: 2014,
@@ -365,6 +392,7 @@ export const mockData: FilmData[] = [
     moviePoster: "https://m.media-amazon.com/images/I/71Nk9LKNiRL._AC_SY679_.jpg"
   },
   {
+    id: "28",
     name: "The Departed",
     director: "Martin Scorsese",
     year: 2006,
@@ -378,6 +406,7 @@ export const mockData: FilmData[] = [
     moviePoster: "https://m.media-amazon.com/images/I/51BXmPPsVzL._AC_.jpg"
   },
   {
+    id: "29",
     name: "Interstellar",
     director: "Christopher Nolan",
     year: 2014,
@@ -390,4 +419,6 @@ export const mockData: FilmData[] = [
     synopsis: "A team of explorers travel through a wormhole in space in an attempt to ensure humanity's survival.",
     moviePoster: "https://m.media-amazon.com/images/I/91obuWzA3XL._AC_SY679_.jpg"
   }
-]
+];
+
+export const posterFallback = "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT1mcHVzLjjPjJNNYOT8v2f0rYU2C5wzvf_BnvhayR8N6ENCTXSP9quG0ejpmJ2w6EBWYw&usqp=CAU";

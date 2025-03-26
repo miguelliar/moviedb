@@ -1,5 +1,47 @@
 .film-minicard {
     display: flex;
-    flex-direction: column;
+    height: 23rem;
+    flex-direction: column-reverse;
     border: 0.25rem solid red;
+    background-size: cover;
+    
+    &__description {
+      padding: 0.5rem;
+      background: white;
+      display: flex;
+      flex-direction: column;
+
+      .description {
+        &__primary{
+          display: flex;
+          flex-direction: row;
+          justify-content: space-between;
+          align-items: end;
+        }
+        
+        &__details {
+          display: none;
+        }
+      }
+
+      .rating {
+        display: flex;
+        flex-direction: row;
+        gap: 0.25rem;
+        align-items: center;
+
+        img {
+          width: 1.5rem;
+          height: 1.5rem;
+        }
+      }
+    }
+
+    &:hover, &:focus {
+      .description__details {
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+      }
+    }
   }
