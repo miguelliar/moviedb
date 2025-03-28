@@ -1,21 +1,19 @@
 import { useEffect, useState } from "react"
 import { FilmData } from "../utils/types"
-import { useSearchParams } from "react-router-dom"
+import { useParams } from "react-router-dom"
 import { mockData, posterFallback } from "../__stubs__/films"
 import starLogo from '../assets/star.svg'
 import './Film.scss'
 
 export function Film () {
     const [film, setFilm] = useState<FilmData|null>(null)
-    const [searchParams] = useSearchParams()
+    const { id } = useParams()
     useEffect(() => {
-        const filmId = searchParams.get("id")
-
         //TODO: substitute this by endpoint call
-        if (filmId) {
-            setFilm(mockData[Number.parseInt(filmId)-1])
+        if (id) {
+            setFilm(mockData[Number.parseInt(id)])
         }
-    }, [searchParams])
+    }, [id])
 
     return (
     <main>
