@@ -17,7 +17,7 @@ export function Film () {
 
     return (
     <main>
-        <h1>{film?.name}</h1>
+        <h1 className="title">{film?.name}</h1>
         <section className="film">
             <img 
                 className="film__poster"

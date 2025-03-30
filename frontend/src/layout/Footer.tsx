@@ -2,6 +2,8 @@ import './Footer.scss'
 
 export function Footer() {
     return <footer>
-        By Miguel Ligero Arbesú - 2025
+        <p>
+            By <b>Miguel Ligero Arbesú</b> - 2025
+        </p>
     </footer>
 }

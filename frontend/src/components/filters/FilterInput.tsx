@@ -34,7 +34,7 @@ export function InputFilter({filter, type}: FilterInputProps) {
     }
 
     return (
-        <label className="filter" htmlFor={filter.id}>
+        <div className="filter">
             <button 
                 className="filter__label"
                 role="button"
@@ -48,9 +48,11 @@ export function InputFilter({filter, type}: FilterInputProps) {
                         className="filter__input"
                         id={filter.id} 
                         type={type}
+                        placeholder={`Filter by ${filter.name}`}
                         onChange={(event) => handleFilter(event.target.value)}
                     />
-                    <button 
+                    <button
+                        className="filter__input-apply"
                         role="button"
                         aria-label={`Click to add ${filter.name}`}
                         onClick={onAddFilter}
@@ -58,6 +60,6 @@ export function InputFilter({filter, type}: FilterInputProps) {
                         Add
                     </button>
                 </div>)}
-        </label>
+        </div>
     )
 }

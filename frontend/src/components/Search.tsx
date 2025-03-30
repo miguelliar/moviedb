@@ -19,19 +19,16 @@ export function Search() {
 
     return (
     <div className="search">
-            <label>
-                <p className="search__label">Busca una pelicula</p>
-                <input 
-                    className="search__input"
-                    type="text"
-                    placeholder='Search any film...'
-                    defaultValue={query}
-                    onChange={
-                        (event) => 
-                            handleSearch(event.target.value)
-                    }
-                />
-            </label>
+            <input 
+                className="search__input"
+                type="text"
+                placeholder='Search any film...'
+                defaultValue={query}
+                onChange={
+                    (event) => 
+                        handleSearch(event.target.value)
+                }
+            />
             <img className='search__icon' src={magnifyingGlass} />
         </div>
     )

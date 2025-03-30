@@ -54,10 +54,6 @@ export const Home = () => {
             </div>
             <FiltersApplied />
         </section>
-        {
-            films.length > 0 
-            && (query || director || year || avgRating) 
-            && <h2>Films found</h2>}
         <section className='search-grid'>
             {films.map((film, index) => {
                 return (

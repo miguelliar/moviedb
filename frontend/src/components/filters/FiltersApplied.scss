@@ -1,11 +1,14 @@
 .filters-applied {
     display: flex;
     flex-direction: row;
-    overflow: auto;
+    flex-wrap: wrap;
 
     .filter-tag {
         display: flex;
         flex-direction: row;
+        border-radius: 3rem;
+        padding: 0.25rem 0.5rem;
+        background-color: var(--lower-bg-color);
         
         &__label {
 
@@ -15,8 +18,18 @@
         }
 
         &__button {
+            margin-left: 0.5rem;
+            width: 1.5rem;
+            height: 1.5rem;
+            border-radius: 100%;
+            padding: 0.5rem;
+            position: relative;
+
             .filter-tag__cross {
                 width: 1rem;
+                position: absolute;
+                top: 15%;
+                left: 13%;
             }
         }
 

@@ -2,14 +2,18 @@
     display: flex;
     height: 23rem;
     flex-direction: column-reverse;
-    border: 0.25rem solid red;
+    border: 0.075rem solid;
     background-size: cover;
+    width: 250px;
+    border-radius: 1rem;
     
     &__description {
       padding: 0.5rem;
       background: white;
       display: flex;
       flex-direction: column;
+      border-bottom-right-radius: 1rem;
+      border-bottom-left-radius: 1rem;
 
       .description {
         &__primary{
