@@ -1,0 +1,72 @@
+.film-form {
+    display: flex;
+    flex-direction: column;
+    margin: 1.5rem;
+    gap: 1rem;
+
+    button {
+        padding: 0.25rem 0.5rem;
+    }
+
+    .cross {
+        width: 1rem;
+        position: absolute;
+        top: 15%;
+        left: 13%;
+    }
+
+    .genres {
+
+        &__input {
+            margin-left: 1rem;
+
+            &__btn {
+                margin-left: 1rem;
+            }
+        }
+
+        .genre {
+            display: flex;
+            &__remove_btn {
+                margin-left: 0.5rem;
+                width: 1.5rem;
+                height: 1.5rem;
+                border-radius: 100%;
+                padding: 0.5rem;
+                position: relative;
+            }
+        }
+    }
+
+    .actors {
+        display: flex;
+        flex-direction: column;
+        gap: 1rem;
+
+        &__label {
+            display: flex;
+            padding-left: 1rem;
+        }
+
+        &__input {
+            margin-left: 1rem;
+        }
+
+        &__add-input {
+            margin-left: 1rem;
+        }
+
+        .actor {
+            display: flex;
+
+            &__remove_btn {
+                margin-left: 1rem;
+                width: 1.5rem;
+                height: 1.5rem;
+                border-radius: 100%;
+                padding: 0.5rem;
+                position: relative;
+            }
+        }
+    }
+}
