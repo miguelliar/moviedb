@@ -7,7 +7,8 @@ import { Link } from "react-router-dom"
 export const MiniCard = ({film}: {film: FilmData}) => {
 
   return (
-    <Link to={`/film/${film.id}`}>
+    //temporary subtraction until connected to backend
+    <Link to={`/film/${Number(film.id)-1}`}>
       <div
         className='film-minicard'
         style={{ backgroundImage: `url(${film.moviePoster}), url(${posterFallback})` }}
