@@ -2,8 +2,9 @@ import { useEffect, useState } from "react"
 import { FilmData } from "../utils/types"
 import { Link, useParams } from "react-router-dom"
 import { mockData, posterFallback } from "../__stubs__/films"
-import starLogo from '../assets/star.svg'
-import edit from '../assets/edit.svg'
+import starLogo from '../assets/star.svg';
+import edit from '../assets/edit.svg';
+import deleteLogo from '../assets/delete.svg'
 import './Film.scss'
 
 export function Film () {
@@ -16,13 +17,23 @@ export function Film () {
         }
     }, [id])
 
+    const onRemove = () => {
+        //TODO: substitute this by endpoint call
+    }
+
     return (
     <main>
+        <div className="film-modifications">
+            <Link className="film-modifications__edit" to={`/film/${film?.id}/edit`}>
+                <p>Edit</p>
+                <img className="film-modifications__edit-logo" src={edit} />
+            </Link>
+            <button role="button" className="film-modifications__delete" onClick={onRemove}>
+                <p>Delete</p>
+                <img className="film-modifications__delete-logo" src={deleteLogo} />
+            </button>
+        </div>
         <h1 className="title">{film?.name}</h1>
-        <Link className="edit" to={`/film/${film?.id}/edit`}>
-            <p>Edit</p>
-            <img className="edit__logo" src={edit} />
-        </Link>
         <section className="film">
             <img 
                 className="film__poster"

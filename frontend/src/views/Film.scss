@@ -2,6 +2,26 @@
     display: flex;
     flex-direction: column;
 
+    &-modifications {
+        display: flex;
+        gap: 0.5rem;
+        position: absolute;
+        right: 2%;
+        top: 9%;
+
+        &__edit, &__delete {
+            display: flex;
+            gap: 0.5rem;
+            background-color: var(--lower-bg-color);
+            padding: 0.25rem 0.5rem;
+            border-radius: 1rem;
+
+            &-logo {
+                width: 1rem;
+            }
+        }
+    }
+
     &__poster {
         max-width: 15rem;
         margin: 1rem;
@@ -22,18 +42,4 @@
 
 .title {
     margin-left: 2rem;
-}
-
-.edit {
-    display: flex;
-    gap: 0.5rem;
-    position: absolute;
-    right: 0%;
-    background-color: var(--lower-bg-color);
-    padding: 0.25rem 0.5rem;
-    border-radius: 1rem;
-
-    &__logo {
-        width: 1rem;
-    }
 }
