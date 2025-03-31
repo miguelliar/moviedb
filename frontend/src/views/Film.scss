@@ -23,3 +23,17 @@
 .title {
     margin-left: 2rem;
 }
+
+.edit {
+    display: flex;
+    gap: 0.5rem;
+    position: absolute;
+    right: 0%;
+    background-color: var(--lower-bg-color);
+    padding: 0.25rem 0.5rem;
+    border-radius: 1rem;
+
+    &__logo {
+        width: 1rem;
+    }
+}

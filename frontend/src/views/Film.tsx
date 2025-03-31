@@ -1,8 +1,9 @@
 import { useEffect, useState } from "react"
 import { FilmData } from "../utils/types"
-import { useParams } from "react-router-dom"
+import { Link, useParams } from "react-router-dom"
 import { mockData, posterFallback } from "../__stubs__/films"
 import starLogo from '../assets/star.svg'
+import edit from '../assets/edit.svg'
 import './Film.scss'
 
 export function Film () {
@@ -18,6 +19,10 @@ export function Film () {
     return (
     <main>
         <h1 className="title">{film?.name}</h1>
+        <Link className="edit" to={`/film/${film?.id}/edit`}>
+            <p>Edit</p>
+            <img className="edit__logo" src={edit} />
+        </Link>
         <section className="film">
             <img 
                 className="film__poster"

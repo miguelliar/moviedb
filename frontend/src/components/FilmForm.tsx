@@ -73,6 +73,7 @@ export function FilmForm(
                 placeholder="Insert Name of the film"
                 id="name"
                 name="name"
+                defaultValue={film.name}
                 onChange={
                     (e) => 
                         handleUpdateSimpleInput(
@@ -89,6 +90,7 @@ export function FilmForm(
                 placeholder="Insert Director"
                 id="director"
                 name="director"
+                defaultValue={film.director}
                 onChange={
                     (e) => 
                         handleUpdateSimpleInput(
@@ -105,6 +107,7 @@ export function FilmForm(
                 placeholder="Insert year"
                 id="year"
                 name="year"
+                defaultValue={film.year}
                 onChange={
                     (e) => 
                         handleUpdateSimpleInput(
@@ -121,7 +124,7 @@ export function FilmForm(
                     type="genre"
                     placeholder="Add genre"
                     id="genre"
-                    name="year"
+                    name="genre"
                     onChange={(e) => setAddedGenre(e.target.value)}
                 />
                 <button
@@ -212,6 +215,7 @@ export function FilmForm(
                 placeholder="Insert Synopsis"
                 id="synopsis"
                 name="synopsis"
+                defaultValue={film.synopsis}
                 onChange={
                     (e) => 
                         handleUpdateSimpleInput(
@@ -228,6 +232,7 @@ export function FilmForm(
                 placeholder="Insert Average Rating"
                 id="averageRating"
                 name="averageRating"
+                defaultValue={film.averageRating}
                 onChange={
                     (e) => 
                         handleUpdateSimpleInput(
@@ -244,6 +249,7 @@ export function FilmForm(
                 placeholder="Insert URL of the movie poster"
                 id="moviePoster"
                 name="moviePoster"
+                defaultValue={film.moviePoster}
                 onChange={
                     (e) => 
                         handleUpdateSimpleInput(
